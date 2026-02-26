@@ -11,7 +11,7 @@ variable "aws_region" {
 }
 
 variable "ami_id" {
-  description = "AMI ID for EC2 instance"
+  description = "AMI ID for EC2"
   type        = string
 }
 
@@ -33,7 +33,7 @@ variable "key_pair_name" {
 }
 
 variable "security_group_name" {
-  description = "Security Group Name"
+  description = "Security group name"
   type        = string
   default     = "terraform-ec2-sg"
 }
@@ -49,3 +49,10 @@ variable "allowed_http_cidr" {
   type        = list(string)
   default     = ["0.0.0.0/0"]
 }
+
+
+
+
+
+
+
